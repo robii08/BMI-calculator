@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import think from '../image/think.png'
+import skinny from '../image/skinny.png'
+import normal from '../image/healthy.gif'
+import fat from '../image/gif.gif'
 
 const BMICalculator = () => {
   const [age, setAge] = useState('');
@@ -30,19 +33,19 @@ const BMICalculator = () => {
     if (bmiValue < 18.5) {
       bmiDescription = 'Underweight: Your BMI is below the normal weight range for your height.';
       bmiColor = 'var(--underweight)';
-      gifUrl = '../image/skinny.png'; // Underweight GIF
+      gifUrl ={skinny} ; // Underweight GIF
     } else if (bmiValue >= 18.5 && bmiValue <= 25) {
       bmiDescription = 'Normal: Your body weight is considered healthy.';
       bmiColor = 'var(--normal)';
-      gifUrl = '../image/healthy.gif'; // Normal weight GIF
+      gifUrl ={normal} ; // Normal weight GIF
     } else if (bmiValue > 25 && bmiValue <= 30) {
       bmiDescription = 'Overweight: Your body weight is higher than the healthy range.';
       bmiColor = 'var(--overweight)';
-      gifUrl = '../image/gif.gif'; // Overweight GIF
+      gifUrl = {fat}; // Overweight GIF
     } else {
       bmiDescription = 'Obese: Your body weight is significantly higher than the healthy range.';
       bmiColor = 'var(--obese)';
-      gifUrl = '../image/gif.gif'; // Obese GIF
+      gifUrl = {fat}; // Obese GIF
     }
 
     // Update state with calculated values
