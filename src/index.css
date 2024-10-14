@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Arvo", serif;
+}
+:root{
+    --underweight:orange;
+    --normal:green;
+    --overweight:lightcoral;
+    --obese:crimson;
+}
+body {
+  background-image: url("../image/cover.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::placeholder {
+  color: red;
+  opacity: 1; /* Ensure the color is not faded */
+}
+
