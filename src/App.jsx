@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import think from '../image/think.png'
 
 const BMICalculator = () => {
   const [age, setAge] = useState('');
@@ -9,7 +9,7 @@ const BMICalculator = () => {
   const [bmi, setBmi] = useState();
   const [bmiDescription, setBmiDescription] = useState('');
   const [bmiColor, setBmiColor] = useState('white');
-  const [gif, setGif] = useState('../image/think.png'); // Default GIF
+  const [gif, setGif] = useState(think); // Default GIF
 
   const calculateBMI = () => {
     // Validate inputs
